@@ -22,7 +22,7 @@ WHERE NOT EXISTS (
 
 
 
---- Adicionar modalidades do banco da Grécia ao banco integrado
+-- Adicionar modalidades do banco da Grécia ao banco integrado
 
 -- Fencing Generic
 INSERT INTO Modalidades (nome, esporte_id)
