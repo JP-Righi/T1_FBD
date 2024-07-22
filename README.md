@@ -15,8 +15,11 @@ DDL_commands_BancoIntegrado é o SQL de criação do novo banco de dados, onde s
 DML_insert_korea_to_BancoIntegrado é o SQL de inserção dos dados da Coreia do Sul no novo BancoIntegrado, apartir do banco inicial.
 DML_insert_greece_to_BancoIntegrado é o SQL de inserção dos dados da Grécia no novo BancoIntegrado, apartir do banco inicial.
 
-
-
+1. DDL_and_DML_commands_south_korea
+2. DDL_and_DML_greece
+3. DDL_commands_BancoIntegrado
+4. DML_insert_korea_to_BancoIntegrado
+5. DML_insert_greece_to_BancoIntegrado
 
 Se você rodar estes 5 SQL no seu workbench, nesta ordem que foi disposta, vai conseguir o produto final igual ao meu.
 
