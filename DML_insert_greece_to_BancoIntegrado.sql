@@ -1,14 +1,6 @@
 INSERT INTO Paises (nome, noc) VALUES ('Greece', 'GRE');
 
 
--- Encontra o valor máximo do ID de evento atual
-SELECT MAX(id) INTO @max_event_id FROM Eventos;
-
--- Ajusta o próximo valor de auto-incremento para a tabela de eventos
-SET @next_event_id = @max_event_id + 1;
-SET @sql = CONCAT('ALTER TABLE Eventos AUTO_INCREMENT = ', @next_event_id);
-
-
 -- Insere novos eventos da Grécia, garantindo que não haja duplicatas
 INSERT INTO Eventos (ano, estacao, cidade)
 SELECT DISTINCT ano, 'Summer', sede 
