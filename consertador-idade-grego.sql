@@ -5,4 +5,4 @@ SET p.idade = (e.ano - a.nascimento)
 WHERE a.pais_id IN( SELECT pa.id 
 					FROM paises pa 
 					WHERE pa.noc = "GRE"
-);
+); 

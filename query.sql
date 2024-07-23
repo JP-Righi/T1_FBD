@@ -3,7 +3,7 @@ SELECT es.nome AS esporte, ROUND(AVG(p.altura),2) AS media_altura, ROUND(AVG(p.p
 FROM Participacao p
 JOIN Modalidades m ON p.modalidade_id = m.id
 JOIN Esportes es ON m.esporte_id = es.id
-GROUP BY es.nome;
+GROUP BY es.nome; 
 
 -- 2) Listar TOP 3 eventos com mais medalhas de ouro, mostrando a quantidade das outras premiações atletas
 SELECT e.ano, e.cidade, SUM(CASE WHEN p.medalha = 'Gold' THEN 1 ELSE 0 END) AS ouro_count,

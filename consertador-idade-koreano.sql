@@ -6,4 +6,4 @@ JOIN (
     JOIN Eventos e ON p.evento_id = e.id
     WHERE p.idade IS NOT NULL
 ) sub ON a.id = sub.atleta_id
-SET a.nascimento = sub.ano_nascimento;
+SET a.nascimento = sub.ano_nascimento; 
